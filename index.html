@@ -1,28 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/variables.css">
+    <link rel="stylesheet" href="./src/css/media.css">
     <title>Document</title>
 </head>
+
 <body>
     <main class="dashboard">
         <div class="card">
             <div class="profile">
                 <img src="./src/images/image-jeremy.png" alt="image-jeremy">
-                <p>Report for</p>
-                <h1>Jeremy Robson</h1>
+                <div class="nome-do-perfil">
+                    <p>Report for</p>
+                    <h2>Jeremy Robson</h2>
+                </div>
             </div>
             <div class="time-frames">
                 <button type="button" class="btn active" id="daily">Daily</button>
                 <button type="button" class="btn" id="weekly">Weekly</button>
                 <button type="button" class="btn" id="monthly">Monthly</button>
             </div>
-        </div> 
-
+        </div>
+        <div class="card activity-card work">
+            <div class="card-info">
+                <div class="header">
+                    <h3>Work</h3>
+                    <img src="./src/images/icon-ellipsis.svg" alt="menu">
+                </div>
+                <div class="timer">
+                    <p class="current">32hrs</p>
+                    <p class="previous">Last Week - 36hrs</p>
+                </div>
+            </div>
+        </div>
     </main>
     <script src="./src/js/index.js"></script>
 </body>
+
 </html>
